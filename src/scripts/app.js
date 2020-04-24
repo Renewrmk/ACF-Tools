@@ -111,7 +111,9 @@ function getFieldName(thisField) {
 	// Get field name
 	return thisField
 		.closest('.handle')
-
+		.querySelector('.li-field-name')
+		.textContent
+		.trim();
 }
 
 function getTypeOfField(thisField) {
